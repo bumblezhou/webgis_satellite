@@ -1,0 +1,90 @@
+
+AwxHead(filename_Sat96='EILN057A.AWX', int_order=0, head1_length=40, head2_length=2112, filled_length=248, record_length=1200, head_record=3, data_record=1200, product_kind=1, zip_method=0, form_string='SAT2004', data_quality=0)
+
+AwxGeosImageHead(satellite_name='FY2G', year=2024, month=11, day=5, hour=7, minute=0, channel=1, projection=1, width=1200, height=1200, ul_row_id=0, ul_pixel_id=0, sampling_rate=1, ul_lat=6206, lr_lat=659, ul_lon=7732, lr_lon=14870, clat=3500, clon=10000, std_lat1_or_lon=3000, std_lat2=6000, reso_h=500, reso_v=500, mark_geogrid_overlap=0, value_geogrid_overlap=255, palette_data_length=0, calibration_data_length=2048, position_data_length=0, reserved=0)
+
+proj: '+proj=lcc +ellps=WGS84 +lon_0=100.0 +lat_0=35.0 +x_0=0.0 +y_0=0.0 +lat_1=30.0 +lat_2=60.0 +no_defs +type=crs'
+
+
+示例图：
+Information from provider
+Name	fy4b
+Path	C:\Users\hp\Desktop\卫星图像\fy4b.tif
+CRS	EPSG:4326 - WGS 84 - Geographic
+Extent	-179.9999813957074650,-75.1861436905423659 : 179.9200186042925509,75.2138563094576398
+Unit	degrees
+Width	8998
+Height	3760
+Data type	Byte - Eight bit unsigned integer
+GDAL Driver Description	GTiff
+GDAL Driver Metadata	GeoTIFF
+Dataset Description	C:/Users/hp/Desktop/卫星图像/fy4b.tif
+Compression	DEFLATE
+Band 1	
+STATISTICS_APPROXIMATE=YES
+STATISTICS_MAXIMUM=252
+STATISTICS_MEAN=37.08162200975
+STATISTICS_MINIMUM=0
+STATISTICS_STDDEV=62.06084071535
+STATISTICS_VALID_PERCENT=100
+Band 2	
+STATISTICS_APPROXIMATE=YES
+STATISTICS_MAXIMUM=244
+STATISTICS_MEAN=36.320925135104
+STATISTICS_MINIMUM=0
+STATISTICS_STDDEV=60.078859374193
+STATISTICS_VALID_PERCENT=100
+Band 3	
+STATISTICS_APPROXIMATE=YES
+STATISTICS_MAXIMUM=243
+STATISTICS_MEAN=37.281312119723
+STATISTICS_MINIMUM=0
+STATISTICS_STDDEV=61.279575851742
+STATISTICS_VALID_PERCENT=100
+More information	
+AREA_OR_POINT=Area
+X : 4499
+Y : 1880
+X : 2250
+Y : 940
+X : 1125
+Y : 470
+X : 563
+Y : 235
+Dimensions	X: 8998 Y: 3760 Bands: 3
+Origin	-180,75.2139
+Pixel Size	0.04000000000000000083,-0.04000000000000000083
+
+
+
+Name	ANI_VIS_R01_20241105_1500_FY2G_cog
+Path	C:\Users\hp\Desktop\卫星图像\ANI_VIS_R01_20241105_1500_FY2G_cog.tif
+CRS	EPSG:4326 - WGS 84 - Geographic
+Extent	77.3199999999999932,6.6077290155167532 : 148.6994842643684365,62.0600000000000023
+Unit	degrees
+Width	1340
+Height	1041
+Data type	Byte - Eight bit unsigned integer
+GDAL Driver Description	GTiff
+GDAL Driver Metadata	GeoTIFF
+Dataset Description	
+Compression	
+Band 1	
+STATISTICS_APPROXIMATE=YES
+STATISTICS_MAXIMUM=206
+STATISTICS_MEAN=74.635245079783
+STATISTICS_MINIMUM=0
+STATISTICS_STDDEV=34.757412894366
+STATISTICS_VALID_PERCENT=100
+More information	
+X : 670
+Y : 521
+Dimensions	X: 1340 Y: 1041 Bands: 1
+Origin	77.32,62.06
+Pixel Size	0.05326827183908092872,-0.05326827183908092872
+
+
+
+
+
+
