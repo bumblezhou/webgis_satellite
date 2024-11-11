@@ -69,7 +69,34 @@
                 console.error("Error loading COG:", error);
             }
         }
-        loadCOG();
+
+        // loadCOG();
+
+        // Define the bounds (corners) where the PNG overlay should be placed
+        var imageUrl = './ANI_VIS_R01_20241105_1500_FY2G.png';  // Path to your PNG file
+        // var imageBounds = [[6.59, 55], [58.06, 148.7]];
+        var rawImageBounds = [[6.59, 77.32], [62.06, 148.7]];
+        var width = 1488;
+        var height = 1108;
+        var raito = width / height;
+        var centerLon = (148.70 - 77.32 / 2);
+        var centerLat = (62.06 - 6.59 / 2);
+        var totalWidth = (148.7 - 77.32) * raito + 0.5;
+        var halfWidth = totalWidth / 2;
+        leftLon = centerLon - halfWidth;
+        rightLon = centerLon + halfWidth;
+        rawImageBounds[0][1] = leftLon;
+        rawImageBounds[1][1] = rightLon;
+        var toLeftOffset = 9.8;
+        var toBottomOffset = 4.2;
+        rawImageBounds[0][0] = rawImageBounds[0][0] - toBottomOffset;
+        rawImageBounds[1][0] = rawImageBounds[1][0] - toBottomOffset;
+        rawImageBounds[0][1] = rawImageBounds[0][1] - toLeftOffset;
+        rawImageBounds[1][1] = rawImageBounds[1][1] - toLeftOffset;
+        imageBounds = rawImageBounds;
+        console.log(imageBounds);
+        // Add the PNG overlay to the map
+        L.imageOverlay(imageUrl, imageBounds, { opacity: 0.5 }).addTo(map);
     </script>
 </body>
 </html>

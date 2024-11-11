@@ -5,19 +5,22 @@ from awx import Awx
 from osgeo import gdal, osr
 import geopandas as gpd
 import cartopy.feature as cfeature
+from cartopy.io.shapereader import BasicReader
 gdal.UseExceptions()
 
 
 def main():
-    fpath = r'./temp/ANI_VIS_R01_20241105_1500_FY2G.AWX'
+    fpath = r'./temp/ANI_IR1_R01_20241105_1500_FY2G.AWX'
     ds = Awx(pathfile=fpath)
-    print(ds)
+    # print(ds)
     dar = ds.values.squeeze()
+
     plt.pcolormesh(dar.lon, dar.lat, dar, cmap='Greys_r')
+    # print(f"lon:{dar.lon}, lat:{dar.lat}")
     # Remove the axis
     plt.axis('off')
-    plt.savefig(os.path.splitext(fpath)[0] + '.png', dpi=300, bbox_inches='tight', pad_inches=0)
-    plt.show()
+    plt.savefig(os.path.splitext(fpath)[0] + '.png', dpi=300, bbox_inches='tight', pad_inches=0, transparent=True)
+    # plt.show()
 
     # # draw data in projection coordination
     # fpath = r'./temp/ANI_VIS_R01_20241105_1500_FY2G.AWX'  # lambert
